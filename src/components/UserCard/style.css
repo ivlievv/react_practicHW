@@ -1,0 +1,16 @@
+.imgContainer{
+    width: 100px;
+    height: 100px;
+
+}
+
+.userContainer{
+
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+}

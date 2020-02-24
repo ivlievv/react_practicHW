@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import styles from './styles.module.css';
 import Spinner from '../Spinner';
 import UserCard from '../UserCard';
+import stylesCard from '../UserCard/style.css'
 
 class UsersList extends Component{
     constructor(props) {
@@ -42,7 +43,16 @@ class UsersList extends Component{
         const {users, isFetching} = this.state;
         const userComponents = users.map( user => (
             <li key={user.id}>
-                <UserCard user{}/>
+                <div className="userContainer">
+                    <img className="imgContainer" src={user.imageSrc} alt=""/>
+
+                </div>
+                <div className="name">
+                    <h4>{user.firsName}</h4>
+                    <h4>{user.lastName}</h4>
+                </div>
+
+
             </li>));
 
         return(
